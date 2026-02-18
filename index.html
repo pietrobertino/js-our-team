@@ -37,8 +37,58 @@
             <section id="card-section" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 gx-3">
 
             </section>
+
+            <section class="mt-5">
+
+                <h2>Insert a new member</h2>
+
+                <form class="form">
+
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome completo</label>
+
+                        <input type="text" class="form-control" name="name" id="name" aria-describedby="helpIdName"
+                            placeholder="Mario Rossi" required/>
+
+                        <small id="helpIdName" class="form-text text-muted">Inserisci il tuo nome qua sopra</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="role" class="form-label">Ruolo</label>
+
+                        <input type="text" class="form-control" name="role" id="role" aria-describedby="helpIdRole"
+                            placeholder="Developer" required/>
+
+                        <small id="helpIdRole" class="form-text text-muted">Inserisci il tuo ruolo qua sopra</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">indirizzo Email</label>
+
+                        <input type="email" class="form-control" name="email" id="email" aria-describedby="helpIdEmail"
+                            placeholder="mario.rossi@email.com" required />
+
+                        <small id="helpIdEmail" class="form-text text-muted">Inserisci il tuo indirizzo email qua
+                            sopra</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="img" class="form-label">Immagine</label>
+
+                        <input type="url" class="form-control" name="img" id="img" aria-describedby="helpIdImg"
+                            placeholder="https://" />
+
+                        <small id="helpIdImg" class="form-text text-muted">Inserisci una tua foto qua sopra</small>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Invia</button>
+                    <button type="reset" class="btn btn-danger">Annulla</button>
+
+                </form>
+
+            </section>
         </main>
-        
+
     </div>
 
 

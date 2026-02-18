@@ -42,4 +42,41 @@ const cardsNode = document.getElementById("card-section");
 
 cardsNode.innerHTML = renderCards(teamMembers);
 
-//creo una nuova card basandomi sugli input del form
+//creo una nuova card basandomi sugli input del form e la aggiungo all'aray di partenza
+
+const formNode = document.querySelector("form");
+const nameInputNode = document.getElementById("name");
+const roleInputNode = document.getElementById("role");
+const emailInputNode = document.getElementById("email");
+const imgInputNode = document.getElementById("img");
+
+
+formNode.addEventListener("submit", function(event){
+
+  event.preventDefault();
+
+  const name = nameInputNode.value;
+  const role = roleInputNode.value;
+  const email = emailInputNode.value;
+  const img = imgInputNode.value;
+
+  //creo un nuovo oggetto contenente i dati inseriti
+  const newMember = {
+    name,
+    role,
+    email,
+    img
+  }
+
+  teamMembers.push(newMember);
+
+  //poi rieseguo la funzione di render utilizzando la nuova lista
+  
+  cardsNode.innerHTML = renderCards(teamMembers);
+
+  //resetto i campi del form
+  formNode.reset();
+})
+
+
+

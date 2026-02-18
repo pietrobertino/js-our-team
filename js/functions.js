@@ -9,7 +9,7 @@ function renderCards(teamMembers) {
             <div class="card rounded-0">
                 <div class="row g-0">
                     <div class="col-sm-4">
-                        <img src="./assets/${img}" alt="" class="card-img w-100 rounded-0">
+                        <img src="./assets/${img}" alt="" class="card-img w-100 h-100 rounded-0">
                     </div>
                     <div class="col-sm-8 bg-black">
                         <div class="card-body">
